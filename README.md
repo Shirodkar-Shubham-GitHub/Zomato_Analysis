@@ -54,7 +54,6 @@ The objective of analyzing the Zomato dataset is to explore restaurant trends, c
 **4. Relationship Between Restaurant Ratings and Number of Votes**
 * **Insights**:
   * Restaurants with higher ratings tend to have more votes, indicating customer engagement correlates with quality.
-  * Married individuals showed higher interest in family-oriented products such as appliances, home decor, and clothing.
 * **Visualization**:
   * A scatter plot to explore the correlation between aggregate ratings and votes.
 
