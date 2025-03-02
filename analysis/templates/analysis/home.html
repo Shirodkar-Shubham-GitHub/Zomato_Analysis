@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Data Analysis Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Zomato Dashboard</h2>
+        <a href="#ratings">Ratings Distribution</a>
+        <a href="#cuisines">Top Cuisines</a>
+        <a href="#price">Price Range</a>
+        <a href="#votes">Rating vs Votes</a>
+        <a href="#cities">Top Cities</a>
+        <a href="#correlation">Correlation Matrix</a>
+        <a href="#price-cost">Price vs Cost</a>
+        <a href="#localities">Top Localities</a>
+        <a href="#delivery">Online Delivery</a>
+    </div>
+    
+    <div class="content">
+        <h1 class="mb-4">Zomato Data Analysis Dashboard</h1>
+        <div class="row">
+            <div class="col-md-6" id="ratings">
+                <div class="chart-card">
+                    <h4>Distribution of Restaurant Ratings</h4>
+                    <img src="data:image/png;base64,{{ rating_chart }}" class="img-fluid" alt="Ratings">
+                </div>
+            </div>
+            <div class="col-md-6" id="cuisines">
+                <div class="chart-card">
+                    <h4>Top 10 Most Common Cuisines</h4>
+                    <img src="data:image/png;base64,{{ cuisine_chart }}" class="img-fluid" alt="Cuisines">
+                </div>
+            </div>
+            <div class="col-md-6" id="price">
+                <div class="chart-card">
+                    <h4>Distribution of Restaurants by Price Range</h4>
+                    <img src="data:image/png;base64,{{ price_chart }}" class="img-fluid" alt="Price Range">
+                </div>
+            </div>
+            <div class="col-md-6" id="votes">
+                <div class="chart-card">
+                    <h4>Aggregate Rating vs. Votes</h4>
+                    <img src="data:image/png;base64,{{ rating_vs_votes_chart }}" class="img-fluid" alt="Rating vs Votes">
+                </div>
+            </div>
+            <div class="col-md-6" id="cities">
+                <div class="chart-card">
+                    <h4>Top 10 Cities by Number of Restaurants</h4>
+                    <img src="data:image/png;base64,{{ top_cities_chart }}" class="img-fluid" alt="Top Cities">
+                </div>
+            </div>
+            <div class="col-md-6" id="correlation">
+                <div class="chart-card">
+                    <h4>Correlation Matrix</h4>
+                    <img src="data:image/png;base64,{{ correlation_chart }}" class="img-fluid" alt="Correlation Matrix">
+                </div>
+            </div>
+            <div class="col-md-6" id="price-cost">
+                <div class="chart-card">
+                    <h4>Price Range vs. Average Cost for Two</h4>
+                    <img src="data:image/png;base64,{{ price_vs_cost_chart }}" class="img-fluid" alt="Price vs Cost">
+                </div>
+            </div>
+            <div class="col-md-6" id="localities">
+                <div class="chart-card">
+                    <h4>Top 10 Localities by Restaurant Count</h4>
+                    <img src="data:image/png;base64,{{ top_localities_chart }}" class="img-fluid" alt="Top Localities">
+                </div>
+            </div>
+            <div class="col-md-6" id="delivery">
+                <div class="chart-card">
+                    <h4>Online Delivery Availability</h4>
+                    <img src="data:image/png;base64,{{ online_delivery_chart }}" class="img-fluid" alt="Online Delivery">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
