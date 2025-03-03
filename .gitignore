@@ -10,6 +10,13 @@ myenv/
 # Ignore VS Code settings
 .vscode/
 
+# Database
+db.sqlite3
+db.sqlite3-journal
+*.db
+*.sqlite3
+
+
 # Ignore environment variables
 .env
 
