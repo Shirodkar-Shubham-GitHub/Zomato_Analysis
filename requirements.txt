@@ -25,6 +25,7 @@ executing==2.2.0
 fastjsonschema==2.21.1
 fonttools==4.56.0
 fqdn==1.5.1
+gunicorn==23.0.0
 h11==0.14.0
 httpcore==1.0.7
 httpx==0.28.1
@@ -73,6 +74,7 @@ platformdirs==4.3.6
 prometheus_client==0.21.1
 prompt_toolkit==3.0.50
 psutil==7.0.0
+psycopg2-binary==2.9.10
 pure_eval==0.2.3
 pycparser==2.22
 Pygments==2.19.1
@@ -80,6 +82,7 @@ pyparsing==3.2.1
 python-dateutil==2.9.0.post0
 python-json-logger==3.2.1
 pytz==2025.1
+pywin32==308
 pywinpty==2.0.15
 PyYAML==6.0.2
 pyzmq==26.2.1
@@ -109,4 +112,5 @@ wcwidth==0.2.13
 webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
+whitenoise==6.9.0
 widgetsnbextension==4.0.13
