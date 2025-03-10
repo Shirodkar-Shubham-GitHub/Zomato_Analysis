@@ -1,7 +1,7 @@
 # Zomato Analysis
 
 ## Introduction
-The Zomato dataset provides comprehensive information about restaurants, including details such as location, cuisine types, cost for two, ratings, and online delivery availability. This dataset offers valuable insights into consumer preferences, restaurant trends, and geographical distribution of dining establishments. By analyzing this data, we can uncover patterns in dining habits, restaurant density, and the factors influencing popularity. This analysis is especially useful for businesses aiming to optimize their services and for customers seeking better dining experiences.
+The Zomato dataset provides comprehensive information about restaurants, including details such as location, cuisine types, cost for two, ratings, and online delivery availability. This dataset offers valuable insights into consumer preferences, restaurant trends, and geographical distribution of dining establishments. By analyzing this data, we can uncover patterns in dining habits, restaurant density, and the factors influencing popularity. This analysis is especially useful for businesses aiming to optimize their services and for customers seeking better dining experiences. The live version of the application is available [here](https://shubhamshirodkar990.pythonanywhere.com/).
 
 ## Dataset Description
 The Zomato dataset comprises detailed information about restaurants across various cities, including features such as restaurant names, locations, cuisines offered, average cost for two, ratings, votes, and delivery options. It also includes temporal data like review timestamps and operational details like online delivery availability. This structured dataset is ideal for analyzing trends in the food industry, geographical restaurant distribution, and customer preferences, enabling data-driven decision-making and strategic insights.
@@ -17,6 +17,18 @@ The objective of analyzing the Zomato dataset is to explore restaurant trends, c
 * **Matplotlib**: To create static visualizations and charts.
 * **Seaborn**: For advanced and aesthetically pleasing visualizations.
 * **Jupyter Notebook**: As the development environment for interactive data analysis.
+
+## Installation
+ #### 1. Clone the Repository:
+    git clone https://github.com/Shirodkar-Shubham-GitHub/Zomato_Analysis
+    cd Zomato_Analysis
+ #### 2. Create a Virtual Environment:
+    python -m venv my_env
+    my_env\Scripts\activate
+ #### 3. Install Dependencies:
+    pip install -r requirements.txt
+ #### 4. Run the Development Server:
+    python manage.py runserver
 
 ## Data Preprocessing
 1. **Loading the Dataset**:
@@ -89,5 +101,8 @@ The objective of analyzing the Zomato dataset is to explore restaurant trends, c
 * **Visualization**:
   * A pie chart or bar chart to show the availability of online delivery.
 
+## Deployment
+   This project was deployed on PythonAnywhere. Follow the platform's instructions to deploy your Django application.
+   
 ## Conclusion
 The Zomato dataset analysis reveals key insights into the restaurant industry, including customer preferences, pricing trends, and geographical distribution. Popular cuisines like North Indian, Chinese, and Fast Food dominate, while cities such as New Delhi, Gurgaon and noida lead in restaurant density. Most restaurants cater to budget-friendly price ranges, with premium options showing greater cost variation. A strong correlation between ratings and votes highlights the importance of quality in customer engagement. The rise of online delivery services reflects changing consumer habits, emphasizing the shift toward convenience and digital platforms. These findings offer actionable insights for businesses to optimize their strategies and enhance customer satisfaction.
