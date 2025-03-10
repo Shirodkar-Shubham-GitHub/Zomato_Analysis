@@ -11,6 +11,7 @@ The objective of analyzing the Zomato dataset is to explore restaurant trends, c
 
 ## Tools and Technologies Used
 * **Python**: For data manipulation, analysis, and visualization.
+* **Django**: A high-level Python web framework used for building scalable and secure web applications.
 * **Pandas**: To clean, preprocess, and analyze the dataset efficiently.
 * **NumPy**: For numerical operations and handling large datasets.
 * **Matplotlib**: To create static visualizations and charts.
